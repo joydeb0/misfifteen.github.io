@@ -2,10 +2,10 @@ var UserInfo = [
     {
         name: "Joy Barman",
         avater: "avater.jpg",
-        roll: "59",
+        roll: "55",
         reg: "500",
         email: "joy@gmail.com",
-        hometown: "netrakona",
+        hometown: "Netrakona",
         blood: "A+",
         SCODE: "1010",
         phone: "01924251734"
