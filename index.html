@@ -606,103 +606,10 @@
 
         wish you comback soon !
     </section>
-
-    <script>
-        let scode = localStorage.getItem('scode')?localStorage.getItem('scode'):''
-        console.log('Logged In successed')
-
-        if(scode!== ''){
-            document.getElementById('formcard').style.display='none';
-            document.getElementById('thankYou').style.display='block'; 
-        }
-    </script>
     
 <script src="./studentsdata.js"></script>
     <script>
-
-
-        var Form1 = document.getElementById('form1');
-        var Form2 = document.getElementById('form2');
-        var Form3 = document.getElementById('form3');
-
-        var Next1 = document.getElementById('Next1');
-        var Next2 = document.getElementById('Next2');
-
-        var progress = document.getElementById('progress');
-        var errorAudio = document.getElementById("errorAudio");
-        
-
-        Next1.onclick = function(){
-
-            var Roll = document.getElementById('Roll').value;
-            var Reg = document.getElementById('Reg').value;
-            
-
-            for(i = 0; i < UserInfo.length; i++){
-                if(Roll == UserInfo[i].roll && Reg == UserInfo[i].reg){
-                    localStorage.setItem('roll', UserInfo[i].roll);
-                    localStorage.setItem('reg', UserInfo[i].reg);
-                    Form1.style.left = "-450px";
-                    Form2.style.left = "150px";
-                    progress.style.width = "200px";
-                    document.getElementById('body').style.background = '#333'; 
-                    return
-                }
-            } console.log('Login Fail');
-            errorAudio.src = "error.mp3";
-            errorAudio.play();
-            document.getElementById('body').classList.add('error'); 
-            setTimeout("hideError()", 3000); 
-        }
-        Next2.onclick = function(){
-
-            var Email = document.getElementById('Email').value;
-            var Hometown = document.getElementById('Hometown').value;
-
-            let storedRoll = localStorage.getItem('roll');
-            
-        for(i = 0; i < UserInfo.length; i++){
-                if(Email == UserInfo[i].email && Hometown == UserInfo[i].hometown && storedRoll == UserInfo[i].roll){
-                    localStorage.setItem('email', UserInfo[i].email);
-                    localStorage.setItem('hometown', UserInfo[i].hometown);
-                    Form2.style.left = "-450px";
-                    Form3.style.left = "150px";
-                    progress.style.width = "300px";
-                    document.getElementById('body').style.background = '#333'; 
-                    return
-                }
-            } console.log('Login Fail');
-            errorAudio.src = "error.mp3";
-            errorAudio.play();
-            document.getElementById('body').classList.add('error'); 
-            setTimeout("hideError()", 3000); 
-        }
-        function submitData(){
-
-            var Blood = document.getElementById('Blood').value;
-            var SCODE = document.getElementById('SCODE').value;
-            let storedEmail = localStorage.getItem('email');
-
-            for(i = 0; i < UserInfo.length; i++){
-                if(Blood == UserInfo[i].blood && SCODE == UserInfo[i].SCODE && storedEmail == UserInfo[i].email){
-                    localStorage.setItem('name', UserInfo[i].name);
-                    localStorage.setItem('blood', UserInfo[i].blood);
-                    localStorage.setItem('avater', UserInfo[i].avater);
-                    localStorage.setItem('scode', UserInfo[i].SCODE);
-                    location.reload();
-                    window.location.href = "joydeb.html";
-                    return
-                }
-            } console.log('Login Fail');
-            errorAudio.src = "error.mp3";
-            errorAudio.play();
-            document.getElementById('body').classList.add('error'); 
-            setTimeout("hideError()", 3000); 
-        }
-
-        function hideError(){
-          document.getElementById('body').classList.remove('error'); 
-  }
+function _0x29e8(){var _0x84a7fe=['email','style','name','width','errorAudio','#333','hometown','log','Login\x20Fail','9989nqrUvB','51183XurHfC','reload','length','148375kOqQXk','onclick','Logged\x20In\x20successed','formcard','200px','7053530ExDInD','3856UkYnYK','126dybxzW','error','932256OLZYOp','150px','left','classList','SCODE','error.mp3','location','reg','src','getElementById','Next1','roll','play','hideError()','display','2795608RCxWuM','form1','Next2','746iWukAw','remove','-450px','value','background','scode','blood','1030DsrTYi','joydeb.html','setItem','12kSlIiw','Roll','body','Hometown','getItem','1881hHVcsS','add','Reg'];_0x29e8=function(){return _0x84a7fe;};return _0x29e8();}var _0x38412d=_0xc141;(function(_0x14b969,_0x52299f){var _0x2b725e=_0xc141,_0x466824=_0x14b969();while(!![]){try{var _0x3b6744=-parseInt(_0x2b725e(0x1b2))/0x1*(parseInt(_0x2b725e(0x1a3))/0x2)+parseInt(_0x2b725e(0x191))/0x3+parseInt(_0x2b725e(0x1a0))/0x4+parseInt(_0x2b725e(0x188))/0x5*(parseInt(_0x2b725e(0x18f))/0x6)+parseInt(_0x2b725e(0x184))/0x7*(parseInt(_0x2b725e(0x18e))/0x8)+-parseInt(_0x2b725e(0x185))/0x9*(parseInt(_0x2b725e(0x1aa))/0xa)+parseInt(_0x2b725e(0x18d))/0xb*(-parseInt(_0x2b725e(0x1ad))/0xc);if(_0x3b6744===_0x52299f)break;else _0x466824['push'](_0x466824['shift']());}catch(_0x41edc3){_0x466824['push'](_0x466824['shift']());}}}(_0x29e8,0x5fb67));let scode=localStorage[_0x38412d(0x1b1)](_0x38412d(0x1a8))?localStorage[_0x38412d(0x1b1)](_0x38412d(0x1a8)):'';console[_0x38412d(0x182)](_0x38412d(0x18a));scode!==''&&(document[_0x38412d(0x19a)](_0x38412d(0x18b))[_0x38412d(0x17c)][_0x38412d(0x19f)]='none',document[_0x38412d(0x19a)]('thankYou')[_0x38412d(0x17c)][_0x38412d(0x19f)]='block');var Form1=document['getElementById'](_0x38412d(0x1a1)),Form2=document[_0x38412d(0x19a)]('form2'),Form3=document[_0x38412d(0x19a)]('form3'),Next1=document[_0x38412d(0x19a)](_0x38412d(0x19b)),Next2=document[_0x38412d(0x19a)](_0x38412d(0x1a2)),progress=document['getElementById']('progress'),errorAudio=document['getElementById'](_0x38412d(0x17f));Next1[_0x38412d(0x189)]=function(){var _0x48e79c=_0x38412d,_0x548029=document[_0x48e79c(0x19a)](_0x48e79c(0x1ae))[_0x48e79c(0x1a6)],_0x2f113d=document[_0x48e79c(0x19a)](_0x48e79c(0x17a))['value'];for(i=0x0;i<UserInfo[_0x48e79c(0x187)];i++){if(_0x548029==UserInfo[i][_0x48e79c(0x19c)]&&_0x2f113d==UserInfo[i][_0x48e79c(0x198)]){localStorage[_0x48e79c(0x1ac)](_0x48e79c(0x19c),UserInfo[i]['roll']),localStorage[_0x48e79c(0x1ac)]('reg',UserInfo[i][_0x48e79c(0x198)]),Form1['style'][_0x48e79c(0x193)]=_0x48e79c(0x1a5),Form2[_0x48e79c(0x17c)]['left']=_0x48e79c(0x192),progress['style'][_0x48e79c(0x17e)]=_0x48e79c(0x18c),document[_0x48e79c(0x19a)]('body')['style'][_0x48e79c(0x1a7)]=_0x48e79c(0x180);return;}}console[_0x48e79c(0x182)](_0x48e79c(0x183)),errorAudio['src']='error.mp3',errorAudio['play'](),document[_0x48e79c(0x19a)](_0x48e79c(0x1af))['classList'][_0x48e79c(0x1b3)](_0x48e79c(0x190)),setTimeout(_0x48e79c(0x19e),0xbb8);},Next2[_0x38412d(0x189)]=function(){var _0x1bf261=_0x38412d,_0x544ead=document['getElementById']('Email')['value'],_0x5defce=document[_0x1bf261(0x19a)](_0x1bf261(0x1b0))[_0x1bf261(0x1a6)];let _0x3759ee=localStorage[_0x1bf261(0x1b1)](_0x1bf261(0x19c));for(i=0x0;i<UserInfo['length'];i++){if(_0x544ead==UserInfo[i][_0x1bf261(0x17b)]&&_0x5defce==UserInfo[i][_0x1bf261(0x181)]&&_0x3759ee==UserInfo[i]['roll']){localStorage[_0x1bf261(0x1ac)](_0x1bf261(0x17b),UserInfo[i][_0x1bf261(0x17b)]),localStorage[_0x1bf261(0x1ac)](_0x1bf261(0x181),UserInfo[i]['hometown']),Form2[_0x1bf261(0x17c)]['left']=_0x1bf261(0x1a5),Form3['style'][_0x1bf261(0x193)]=_0x1bf261(0x192),progress[_0x1bf261(0x17c)][_0x1bf261(0x17e)]='300px',document[_0x1bf261(0x19a)](_0x1bf261(0x1af))[_0x1bf261(0x17c)][_0x1bf261(0x1a7)]=_0x1bf261(0x180);return;}}console[_0x1bf261(0x182)](_0x1bf261(0x183)),errorAudio[_0x1bf261(0x199)]=_0x1bf261(0x196),errorAudio['play'](),document['getElementById'](_0x1bf261(0x1af))[_0x1bf261(0x194)]['add'](_0x1bf261(0x190)),setTimeout(_0x1bf261(0x19e),0xbb8);};function submitData(){var _0x40bb97=_0x38412d,_0x3ea36d=document[_0x40bb97(0x19a)]('Blood')[_0x40bb97(0x1a6)],_0x2436aa=document[_0x40bb97(0x19a)](_0x40bb97(0x195))[_0x40bb97(0x1a6)];let _0x1c5854=localStorage[_0x40bb97(0x1b1)](_0x40bb97(0x17b));for(i=0x0;i<UserInfo[_0x40bb97(0x187)];i++){if(_0x3ea36d==UserInfo[i][_0x40bb97(0x1a9)]&&_0x2436aa==UserInfo[i][_0x40bb97(0x195)]&&_0x1c5854==UserInfo[i][_0x40bb97(0x17b)]){localStorage[_0x40bb97(0x1ac)]('name',UserInfo[i][_0x40bb97(0x17d)]),localStorage[_0x40bb97(0x1ac)]('blood',UserInfo[i][_0x40bb97(0x1a9)]),localStorage[_0x40bb97(0x1ac)]('avater',UserInfo[i]['avater']),localStorage[_0x40bb97(0x1ac)](_0x40bb97(0x1a8),UserInfo[i][_0x40bb97(0x195)]),location[_0x40bb97(0x186)](),window[_0x40bb97(0x197)]['href']=_0x40bb97(0x1ab);return;}}console[_0x40bb97(0x182)](_0x40bb97(0x183)),errorAudio[_0x40bb97(0x199)]=_0x40bb97(0x196),errorAudio[_0x40bb97(0x19d)](),document[_0x40bb97(0x19a)]('body')[_0x40bb97(0x194)][_0x40bb97(0x1b3)](_0x40bb97(0x190)),setTimeout(_0x40bb97(0x19e),0xbb8);}function _0xc141(_0x329ec6,_0x448182){var _0x29e8ed=_0x29e8();return _0xc141=function(_0xc141e8,_0x414d02){_0xc141e8=_0xc141e8-0x17a;var _0x1eb47f=_0x29e8ed[_0xc141e8];return _0x1eb47f;},_0xc141(_0x329ec6,_0x448182);}function hideError(){var _0xb24e04=_0x38412d;document[_0xb24e04(0x19a)]('body')[_0xb24e04(0x194)][_0xb24e04(0x1a4)]('error');}
     </script>
 
 
