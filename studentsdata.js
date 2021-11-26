@@ -3,7 +3,7 @@ var UserInfo = [
         name: "Joy Barman",
         avater: "avater.jpg",
         roll: "55",
-        reg: "500",
+        reg: "833",
         email: "joy@gmail.com",
         hometown: "Netrakona",
         blood: "A+",
